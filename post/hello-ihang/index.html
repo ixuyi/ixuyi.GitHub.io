@@ -1,13 +1,20 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>Hello ihang | Gridea</title>
-<link rel="shortcut icon" href="https://ixuyi.GitHub.io/favicon.ico?v=1631453656710">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ixuyi.GitHub.io/favicon.ico?v=1631455575380">
 <link rel="stylesheet" href="https://ixuyi.GitHub.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Hello ihang | Gridea - Atom Feed" href="https://ixuyi.GitHub.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
@@ -26,88 +33,87 @@ $(document).ready(function () {
     alert('RUNOOB');
 })..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ixuyi.GitHub.io">
-  <img class="avatar" src="https://ixuyi.GitHub.io/images/avatar.png?v=1631453656710" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    天下武功 唯快不破
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ixuyi.GitHub.io">
+        <img src="https://ixuyi.GitHub.io/images/avatar.png?v=1631455575380" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://www.bilibili.com" class="site-nav" target="_blank">
+            bilibili
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://www.bilibili.com" class="menu" target="_blank">
-          bilibili
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      好好学习 天天向上
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ixuyi.GitHub.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Hello ihang
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-09-12
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Hello ihang</h2>
+            <div class="post-date">2021-09-12</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h1 id="这里是一级标题">这里是一级标题</h1>
+            <div class="post-content" v-pre>
+              <h1 id="这里是一级标题">这里是一级标题</h1>
 <h1 id="一级标题1">一级标题1</h1>
 <p>1.测试</p>
 <blockquote>
@@ -116,9 +122,6 @@ $(document).ready(function () {
 你可以新增一行文字<br>
 <s>也可以删除一段问题</s><br>
 爱情也是这样</p>
-  OH my god！
-  let me see.
-  i will give u something.
 </blockquote>
 <p>2.我的名字</p>
 <pre><code class="language-markdown">$(document).ready(function () {
@@ -155,76 +158,36 @@ $(document).ready(function () {
 <p><s>这一行字需要删除</s><br>
 <a href="ihang.me">ihang的个人主页</a></p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E8%BF%99%E9%87%8C%E6%98%AF%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98">这里是一级标题</a></li>
-<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%981">一级标题1</a>
-<ul>
-<li><a href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98">二级标题</a></li>
-</ul>
-</li>
-<li><a href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%982">一级标题2</a></li>
-</ul>
-
-              </div>
             </div>
-          </article>
+            
+            
+
+            
+
+          </div>
+
         </div>
-
-        
-
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://ixuyi.GitHub.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
       </div>
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+AOS.init();
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+</script>
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
+
+
+
   </body>
 </html>
