@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ixuyi.GitHub.io</id>
     <title>Gridea</title>
-    <updated>2021-09-12T10:38:11.736Z</updated>
+    <updated>2021-09-12T13:19:53.703Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ixuyi.GitHub.io"/>
     <link rel="self" href="https://ixuyi.GitHub.io/atom.xml"/>
@@ -27,7 +27,7 @@
 爱情也是这样</p>
 </blockquote>
 <p>2.我的名字</p>
-<pre><code class="language-javascript">$(document).ready(function () {
+<pre><code class="language-markdown">$(document).ready(function () {
     alert('RUNOOB');
 });
 </code></pre>
