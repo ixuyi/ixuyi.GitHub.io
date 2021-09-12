@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ixuyi.GitHub.io</id>
     <title>Gridea</title>
-    <updated>2021-09-12T10:38:11.736Z</updated>
+    <updated>2021-09-12T13:17:56.480Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ixuyi.GitHub.io"/>
     <link rel="self" href="https://ixuyi.GitHub.io/atom.xml"/>
-    <subtitle>三人行 必有我师</subtitle>
+    <subtitle>温故而知新</subtitle>
     <logo>https://ixuyi.GitHub.io/images/avatar.png</logo>
     <icon>https://ixuyi.GitHub.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
@@ -27,7 +27,7 @@
 爱情也是这样</p>
 </blockquote>
 <p>2.我的名字</p>
-<pre><code class="language-javascript">$(document).ready(function () {
+<pre><code class="language-markdown">$(document).ready(function () {
     alert('RUNOOB');
 });
 </code></pre>
