@@ -480,7 +480,7 @@ ul li {
   justify-content: space-between;
 }
 .navbar .navbar-brand {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   align-items: center;
   display: inline-block;
